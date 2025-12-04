@@ -9,5 +9,6 @@ class Dict{
     V search(std::string key) = 0;
     V remove(std::string key) = 0;
     int entries() = 0;
+};
 
 #endif
