@@ -5,30 +5,37 @@
 #include <ostream>
 
 template <typename V>
-class TableEntry{
+class TableEntry
+{
   public:
-    TableEntry(std::string key, V value){
+    TableEntry(std::string key, V value)
+    {
       this->key = key;
       this->value = value;
     }
 
-    TableEntry(std::string key){
+    TableEntry(std::string key)
+    {
       this->key = key;
     }
 
-    TableEntry(){
+    TableEntry()
+    {
       key = "";
     }
 
-    friend bool operator == (const TableEntry<V> &te1, const TableEntry<V> &te2){
+    friend bool operator == (const TableEntry<V> &te1, const TableEntry<V> &te2)
+    {
       return te1.key == te2.key;
     }
 
-    friend bool operator != (const TableEntry<V> &te1, const TableEntry<V> &te2){
+    friend bool operator != (const TableEntry<V> &te1, const TableEntry<V> &te2)
+    {
       return te1.key != te2.key;
     }
 
-    friend std::ostream& operator << (std::ostream &out, const TableEntry<V> &te){
+    friend std::ostream& operator << (std::ostream &out, const TableEntry<V> &te)
+    {
       
     }
 
