@@ -1,7 +1,7 @@
 #ifndef TABLEENTRY_H
 #define TABLEENTRY_H
 
-#include <stream>
+#include <string>
 #include <ostream>
 
 template <typename V>
