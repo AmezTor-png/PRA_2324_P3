@@ -1,4 +1,4 @@
-#ifndef TABLEENTRT_H
+#ifndef TABLEENTRY_H
 #define TABLEENTRY_H
 
 #include <stream>
@@ -38,10 +38,6 @@ class TableEntry
     {
       
     }
-
-
-
-
 };
 
 #endif
