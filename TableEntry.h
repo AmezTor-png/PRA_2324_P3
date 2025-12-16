@@ -8,6 +8,9 @@ template <typename V>
 class TableEntry
 {
   public:
+    std::string key;
+    V value;
+
     TableEntry(std::string key, V value)
     {
       this->key = key;
